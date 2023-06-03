@@ -33,11 +33,11 @@ app.use(express.urlencoded({ extended: true }))
 var carroRouter = require('./routes/carroRouter');
 app.use('/', carroRouter);
 
-// var esportivoRouter = require('./routes/esportivoRouter');
-// app.use('/', esportivoRouter);
+var esportivoRouter = require('./routes/esportivoRouter');
+app.use('/', esportivoRouter);
 
-// var utilitarioRouter = require('./routes/utilitarioRouter');
-// app.use('/', utilitarioRouter);
+var utilitarioRouter = require('./routes/utilitarioRouter');
+app.use('/', utilitarioRouter);
 
 // var reservaRoute = require('./routes/reservaRoute');
 // app.use('/', reservaRoute);
